@@ -1,6 +1,6 @@
 <?php
 
-// Statistics collector
+// Simple statistics collector by Alcosmos
 
 if (true) {
 	$address = "SOME_SCRIPT_IDENTIFIER_NAME_HERE";
