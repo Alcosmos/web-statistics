@@ -38,12 +38,14 @@ if (true) {
 
 
 	$query = $statspdo -> prepare('INSERT INTO access (ip, site, address, browser, country, isnew) VALUES (?, ?, ?, ?, ?, ?);');
+	
 	$query -> bindParam(1, $ip);
 	$query -> bindParam(2, $address);
 	$query -> bindParam(3, $request_uri);
 	$query -> bindParam(4, $broswer);
 	$query -> bindParam(5, $country);
 	$query -> bindParam(6, $isnew);
+	
 	$query -> execute();
 
 	$statspdo = null;
